@@ -1,0 +1,25 @@
+body{
+    background-color: aquamarine;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.content{
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: auto;
+    width: 500px;
+}
+
+.content th, td{
+    border: 1px solid black;
+    padding: 20px;
+
+}
+
+.content table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}

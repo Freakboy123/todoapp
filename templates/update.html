@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%block head%}
+<title>Update Task</title>
+{% endblock %}
+
+
+{%block body%}
+<h1>Update Task</h1>
+<form action="/update/{{task.id}}" method='POST' style="padding: 3em;">
+    <input type='text' id='contentText' value="{{task.content}}" name='contentText' style="height: 2em" required title="This field is required">
+    {%if task.high_priority%}
+    <input type="checkbox" id='priority' value=1 name='priority' checked>
+    {%else%}
+    <input type="checkbox" id='priority' value=1 name='priority'>
+    {%endif%}
+    <label for='priority'>High priority</label>
+    <br>
+    <input type='submit' style="margin: 20px">
+</form>         
+{% endblock%}
